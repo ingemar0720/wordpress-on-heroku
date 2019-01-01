@@ -26,7 +26,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 ) ) );
 ```
 - type `git init`, `git add .`, `git commit -am "first commit"`, `heroku git:remote -a app-name` and `git push heroku master` to upload and deploy the wordpress to heroku.
-- heroku buildpack set the default maximum upload size for media to 2MB. In order to increase it, you must log in heroku bash `heroku run bash` and create [user.ini](https://devcenter.heroku.com/articles/custom-php-settings#user-ini-files-recommended) in /app/.
+- heroku buildpack set the default maximum upload size for media to 2MB. In order to increase it, you must log in heroku bash `heroku run bash` and create [.user.ini](https://devcenter.heroku.com/articles/custom-php-settings#user-ini-files-recommended) in /app/.
 - `heroku open` to open the website and install wordpress
 - have fun!
 
