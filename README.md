@@ -2,18 +2,18 @@
 This repository is to deploy a wordpress site on heroku service.
 
 # Prerequisite
-1. install git
-1. apply [heroku account](https://dashboard.heroku.com/)
-1. apply [AWS account](https://aws.amazon.com)
-1. download [wordpress package](https://wordpress.org/download/)
-1. apply plugins and themes for wordpress(optional)
+- install git
+- apply [heroku account](https://dashboard.heroku.com/)
+- apply [AWS account](https://aws.amazon.com)
+- download [wordpress package](https://wordpress.org/download/)
+- apply plugins and themes for wordpress(optional)
 
 # Installation
 - apply a free account on[heroku](https://dashboard.heroku.com/) and install [heroku cli](https://devcenter.heroku.com/categories/command-line)
 - use heroku cli tool to login. `heroku login`
 - run install.bat(Mac OS or linux please rewrite to bash script) to create app and install required plugins. Please replace `app-name` with your application name, use your `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 - find mysql connection information from heroku settings. 
-![alt text](http://url/to/heroku.png)
+![alt text](/img/heroku.PNG?raw=true)
 JAWSDB URL format is mysql://`DB_USER`:`DB_PASSWORD`@`DB_HOST`/`DB_NAME`
 - apply a [aws account](https://aws.amazon.com)and follow the guide to create new IAM user and access policy for S3.
 - unzip wordpress package, copy `wp-config-sample.php` to `wp-config.php`, amend the content and map JAWSDB information into the file.
@@ -34,8 +34,8 @@ define( 'AS3CF_SETTINGS', serialize( array(
 # AWS S3 setup
 1. log in to AWS console and find for IAM service.
 1. add user 
-![create user](http://url/to/IAM_1.png)
-![alt text](http://url/to/IAM_2.png)
-![alt text](http://url/to/IAM_3.png)
+![alt text](/img/IAM_1.PNG?raw=true)
+![alt text](/img/IAM_2.PNG?raw=true)
+![alt text](/img/IAM_3.PNG?raw=true)
 1. retrieve 'access-key-id' and 'secret-access-key' and save it in safe place.
-![alt text](http://url/to/IAM_4.png)
+![alt text](/img/IAM_4.PNG?raw=true)
